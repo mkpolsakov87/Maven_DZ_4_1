@@ -10,12 +10,20 @@ public class Main {
         // значения заведённых переменных. Ответ сохраняете в
         // новую переменную и выводите на экран
 
-        int price = 8537;
-        int mile = 20;
-        int bonus = price / mile;
+        int account = 100;
+        int sto = 1;
+        int popolnenie = 1075;
 
 
-        System.out.println("Бонусные мили: " + bonus);
+        int bonus;
+        if (popolnenie > 1000) {
+            bonus = popolnenie / 100;
+        } else {
+            bonus = 0;
+        }
 
+        int result = account + popolnenie + bonus;
+
+        System.out.println("Итоговая сумма " + result);
     }
 }
