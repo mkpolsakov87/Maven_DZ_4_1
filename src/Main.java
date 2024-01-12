@@ -11,7 +11,6 @@ public class Main {
         // новую переменную и выводите на экран
 
         int account = 100;
-        int sto = 1;
         int popolnenie = 1075;
 
 
