@@ -1,9 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-        BmiService service = new BmiService();
-        double weight = 83.5; // в кг
-        double height = 1.76; // в метрах
-        int index = service.calculate(weight, height);
-        System.out.println(index);
+
+        CreditPaymentService service = new CreditPaymentService();
+
+        int credit = 1_000_000; // в рублях
+        double rate = 9.99; // в процентах
+        int period = 12; // в месяцах
+
+        System.out.println();
+        System.out.println(service.calculate(1000000, 9.99, 12));
+
+        System.out.println();
+        System.out.println(service.calculate(1000000, 9.99, 24));
+
+        System.out.println();
+        System.out.println(service.calculate(1000000, 9.99, 36));
     }
 }
